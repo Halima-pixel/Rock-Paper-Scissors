@@ -30,3 +30,29 @@ function getHumanChoice() {
 
 let humanScore = 0;
 let ComputerScore = 0;
+
+// Create a new function named playRound that takes the computerChoice and humanChoice as arguments
+function playRound(computerChoice, humanChoice) {
+
+    // Make humanChoice parameter case sensitive
+       humanChoice = humanChoice.toLowerCase();
+
+     const humanChoice = getComputerChoice();
+     const computerChoice = getComputerChoice(;)
+
+       
+       // Determine the outcome of the round
+        if (humanChoice === computerChoice) {
+            console.log("It's a tie!");
+        } else if (
+            (humanChoice === "rock" && computerChoice === "scissors") ||
+            (humanChoice === "scissors" && computerChoice === "paper") ||
+            (humanChoice === "paper" && computerChoice === "rock")
+        ) {
+            console.log("You win! " + humanChoice +  " beats "  + computerChoice + ".");
+        } else {
+            console.log("You lose! " + computerChoice + " beats " + humanChoice + ".");
+        }
+
+
+}
