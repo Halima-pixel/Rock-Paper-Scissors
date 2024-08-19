@@ -25,4 +25,8 @@ function getHumanChoice() {
 }
 
 // Create variables to keep track of the players score
-// 
+// Create two new variables named humanScore and ComputerScore in the global scope
+// Initialize those variables with the value of 0
+
+let humanScore = 0;
+let ComputerScore = 0;
