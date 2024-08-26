@@ -20,18 +20,18 @@ const game = {
     },
   
     playRound(humanChoice, computerChoice) {
-        if (humanChoice === computerChoice) {
-        console.log("It's a tie!"); 
-        return "tie";
+        if (humanChoice === computerChoice) { 
+          resultElement.textContent = ("It's a tie" )
+        return "It's a tie!";
       } else if (
         (humanChoice === "rock" && computerChoice === "scissors") ||
         (humanChoice === "scissors" && computerChoice === "paper") ||
         (humanChoice === "paper" && computerChoice === "rock")
       ) {
-        console.log("You win! " + humanChoice + " beats " + computerChoice + ".");
+        resultElement.textContent = ("You win! " + humanChoice + " beats " + computerChoice + ".");
         return "win";
       } else {
-        console.log("You lose! " + computerChoice + " beats " + humanChoice + ".");
+        resultElement.textContent = ("You lose! " + computerChoice + " beats " + humanChoice + ".");
         return "lose";
       }
  
